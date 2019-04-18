@@ -28,8 +28,8 @@ def word_substituter(tweet)
 end
 
 
-
-    #convert string to array
-    #iterate over every word in the array
-    #if a word matches a key replace it with the value
-    #put the array back into a string and return the new string
+def bulk_tweet_shortener(array_of_tweets)
+  array_of_tweets.each do |tweet|
+    puts word_substituter(tweet)
+  end
+end
