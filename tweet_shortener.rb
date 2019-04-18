@@ -17,15 +17,14 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  updated_words = tweet.split(" ").collect do |word|
-    dictionary[word] || word 
+  tweet.split(" ").collect {|w| dictionary[w] || w }.join(" ")
     # if dictionary.keys.include?(word)
     #   word = dictionary[word]
     # else
     #   word
     # end
-  end
-  updated_words.join(" ")
+#   end
+#   updated_words.join(" ")
 end
 
 
