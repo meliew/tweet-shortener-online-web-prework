@@ -22,8 +22,8 @@ def word_substituter(tweet)
       word = dictionary[word]
     else
       word
-tweet.join(" ")
-end
+      tweet.join(" ")
+    end
   end
 end
 
