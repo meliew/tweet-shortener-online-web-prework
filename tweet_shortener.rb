@@ -18,11 +18,15 @@ end
 
 def word_substituter(tweet)
   tweet.split(" ").collect do |word|
-    dictionary.keys.include?(word) 
+    if dictionary.keys.include?(word) 
+      word = substitutions[word]
+
+    else 
+      word 
 
     end
   end
-
+end 
 
 
 
