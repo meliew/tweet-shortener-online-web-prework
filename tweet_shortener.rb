@@ -47,4 +47,3 @@ def shortened_tweet_truncator(tweet)
     tweet[141..n]= "..."
   end
 end
-end
